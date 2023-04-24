@@ -1,0 +1,26 @@
+Primero debemos abrir Git Bash en el directorio y solo debemos escribir "git init" (se crea una carpeta .git que es oculta)
+
+"git status -s" nos dice los archivos que hay, 
+1. ?? (Ninguno de los archivos están sometidos a seguimiento)
+2. A (Agregado en el staging area)
+3. M (Rojo) -> Ha sido modificado pero no preparado para commit
+4. M (Verde) -> Cambios guardados y preparado para commit
+5. U (No guardado en ningún lugar)
+
+Ahora debemos decir que archivos comenzar con el seguimiento con "git add index.html", ahora cambia a A, se pueden agregar todos con "git add ."
+
+Ahora sigue guardar los cambios con "git commit -m "Comienzo del proyecto""
+
+Despues del commit, no se puede hacer commit de nuevo, debes repetir el procedimiento mandando el archio al staging area
+
+COMO VER EL HISTORIAL DE COMMITS? 
+- Con poner "git log --oneline" podemos ver el listado de commits
+
+REGRESAR A OTRA VERSIÓN O COMMIT?
+- "git reset --hard 8a9eea1" restauración del archivo, la clave del archivo se observa en "git log --oneline", los cambios se realizan solos en el editor, PERO YA NO SE PUEDE RECUPERAR LAS DEMÁS COPIAS
+
+¿CÓMO REALIZAR UN ADD Y COMMIT A LA VEZ?
+git commit -am ""
+
+¿CÓMO SUBIR UN REPOSITORIO A GITHUB?
+-
