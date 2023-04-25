@@ -7,7 +7,7 @@ Primero debemos abrir Git Bash en el directorio y solo debemos escribir "git ini
 4. M (Verde) -> Cambios guardados y preparado para commit
 5. U (No guardado en ningún lugar)
 
-Ahora debemos decir que archivos comenzar con el seguimiento con "git add index.html", ahora cambia a A, se pueden agregar todos con "git add ."
+Ahora debemos decir que archivos comenzar con el seguimiento con "git add index.html", ahora cambia a A, se pueden agregar todos con "git add ." o los archivos que se hayan modificado con M Roja 
 
 Ahora sigue guardar los cambios con "git commit -m "Comienzo del proyecto""
 
@@ -20,7 +20,13 @@ REGRESAR A OTRA VERSIÓN O COMMIT?
 - "git reset --hard 8a9eea1" restauración del archivo, la clave del archivo se observa en "git log --oneline", los cambios se realizan solos en el editor, PERO YA NO SE PUEDE RECUPERAR LAS DEMÁS COPIAS
 
 ¿CÓMO REALIZAR UN ADD Y COMMIT A LA VEZ?
-git commit -am ""
+git commit -am "TEXTO"
+
+¿CÓMO ABRIR EDITOR MIN?
+git commit --amend, tiene muchos comando ese editor, sirve para modificar la descripción con ":i", borramos con suprimir, presionar escape, poner ":i", escribir el nuevo titulo, enter, escape. PARA SALIR DEL EDITOR Y GUARDAR CAMBIOS es con ":wq"
 
 ¿CÓMO SUBIR UN REPOSITORIO A GITHUB?
--
+- Crear un repositorio en GITHUB, despues poner link que se genere
+git remote add origin https://github.com/EmmSanchez/CursoGit.git
+git branch -M main
+git push -u origin main (Con este comando también podemos actualizar el repositorio)
