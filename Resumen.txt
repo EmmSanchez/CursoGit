@@ -30,3 +30,14 @@ git commit --amend, tiene muchos comando ese editor, sirve para modificar la des
 git remote add origin https://github.com/EmmSanchez/CursoGit.git
 git branch -M main
 git push -u origin main (Con este comando también podemos actualizar el repositorio)
+
+¿CÓMO TRAER MODIFICACIONES HECHAS EN GITHUB AL REPOSITORIO LOCAL?
+git pull
+
+¿CÓMO DECIRLE QUE EL PROYECTO ESTÁ LISTO (VERSION 1.0)?
+- Las tags nos permiten identificar las especificaciones del proyecto
+git tag 24-04-23v1 -m "version 1 del proyecto"   -> Se crea el tag de manera local, ahora hay que subirlo
+git push --tags
+
+¿CÓMO CLONAR UN REPOSITORIO REMOTO DE GITHUB?
+git clone link     -> El link se debe de generar
